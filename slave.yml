@@ -1,0 +1,21 @@
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    aws_access_key: "AKIAJ6FBCLSOR3F6763Q"
+    aws_secret_key: "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"
+  tasks:
+      - name: create ec2 instance
+        ec2:
+          aws_access_key: "{{ aws_access_key }}"
+          aws_secret_key: "{{ aws_secret_key }}"
+          image: ami-c7e0c82c
+          wait: yes
+          instance_type: t2.micro
+          group:  launch-wizard-2
+          region: eu-central-1
+          key_name: Test
+          count_tag:
+            Name: dbserver
+          exact_count: 1
+        register: ec2
