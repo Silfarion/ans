@@ -8,7 +8,7 @@
     jar: /home/jenkins/swarm-client-2.2-jar-with-dependencies.jar
     master: http://18.197.185.224:8080/
     user: Silfarion
-    jenpass: Nimbus1978
+    jenpass: *********
 #    jenpass: '$6$IcC0o6Nv$g35f/8/oHAhDymcf34stT.10wZEQNgOWnq2cqwlZz63fOHU4d2aUh5.seXDDabPJmmnvDUeaWDtNR//9z0t9Z/'
     label: "{{ lookup('env','label') }}"
     directory: /var/www/html/
