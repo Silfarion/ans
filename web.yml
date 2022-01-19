@@ -10,7 +10,7 @@
 
     - name: Install required packages
 #      aws_access_key: AKIAJ6FBCLSOR3F6763Q
-#      aws_secret_key: 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
+#      aws_secret_key: 
       apt: name={{ item }}
       sudo: yes
       with_items:
