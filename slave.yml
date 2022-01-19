@@ -3,7 +3,7 @@
   gather_facts: false
   vars:
     aws_access_key: "AKIAJ6FBCLSOR3F6763Q"
-    aws_secret_key: "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"
+    aws_secret_key: ""
   tasks:
       - name: create ec2 instance
         ec2:
