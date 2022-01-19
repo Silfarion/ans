@@ -9,7 +9,6 @@
     master: http://18.197.185.224:8080/
     user: Silfarion
     jenpass: *********
-#    jenpass: '$6$IcC0o6Nv$g35f/8/oHAhDymcf34stT.10wZEQNgOWnq2cqwlZz63fOHU4d2aUh5.seXDDabPJmmnvDUeaWDtNR//9z0t9Z/'
     label: "{{ lookup('env','label') }}"
     directory: /var/www/html/
     slave_name: slave-for'{{label}}' 
@@ -24,7 +23,7 @@
   - name: Create jenkins user
     user: 
       name: jenkins
-      password: '$6$uFbNxkOO$4eia3tdn9E00dL4rxcGvwzqiATrHKXBhm4RQKGWEKK3mtbf.764WBrlax2IP8aaADxsAHfa0Y/sG.BPgPqoTp/'
+      password: ''
       state: present
       shell: /bin/bash
       home: /home/jenkins
